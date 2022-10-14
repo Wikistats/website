@@ -33,7 +33,7 @@ otherChannels:
   ]
 ---
 
-**TCA** (born: December 6, 2009), better known online as **Graphify**, is a statistic livestreamer from the Philippines that makes interesting and eye-catching layouts. His livestreams center around subscriber counts, and sometimes view counts.
+**TCA** (born: December 6, 2009), better known online as **Graphify** (formerly **TCACounts**), is a statistic livestreamer from the Philippines that makes interesting and eye-catching layouts. His livestreams center around subscriber counts, and sometimes view counts.
 
 <br />
 
