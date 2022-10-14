@@ -28,3 +28,5 @@ otherChannels:
     },
   ]
 ---
+
+JipStats, Or known as JipIsPlaying, Jip Plays, StatsComparisons, is a Statistics YouTuber Which Makes High Quality Subsciber Count Visulizations after TRAINAlytics passed him. At His Peak, He Uploads Every Day, but now he only uploads weekly to improve video quality and take a break. He Partnered with Graphify, which makes Jip Later starts to stream high quality streams. He Hits 1000, 2000 and 3000 subscribers because he streamed BLACKPINK - PINK VENOM Live View Count which went viral. He Is also the only stats channel which streamed Kids Diana Show and Like Nastya Both Channels Hitting 100M Subscribers as the main count, and the only one to make a timelapse of it with his own streams. He Is Currently Working one Cocomelon vs SET India overtake timelapse which will break his previous record of 45 hours in 2 mins. (KDS Timelapse)
