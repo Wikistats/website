@@ -1,0 +1,127 @@
+---
+import Header from "../components/Header.astro";
+import SwitchLogo from "../components/SwitchLogo";
+
+export interface Props {
+  content: {
+    title: string;
+    profile: {
+      name: string;
+      url: string;
+    };
+    avatars: {
+      appearance: string;
+      icon: string;
+      logo: string;
+    };
+    style: string;
+    joined: string;
+    upload: string;
+    wip: boolean;
+    otherChannels?: {
+      title: string;
+      subtitle: string;
+      profile: {
+        name: string;
+        url: string;
+      };
+      avatars: {
+        appearance: string;
+        icon: string;
+        logo: string;
+      };
+      style: string;
+      joined: string;
+      upload: string;
+    }[];
+  };
+}
+
+const { content } = Astro.props;
+---
+
+<Header />
+<style>
+  body {
+    @apply bg-[#212121]
+  }
+</style>
+<div class="min-h-screen p-5 text-white">
+  {
+    content.wip && (
+      <div
+        class="rounded-xl p-4 mb-4 text-xl bg-yellow-200 text-yellow-800"
+        role="alert"
+      >
+        <span class="font-medium">Warning!</span> This page was marked as a work
+        in progress. Things may not be accurate, and some things may get
+        removed/changed in the final version.
+      </div>
+    )
+  }
+  <div class="flex flex-col float-right">
+    <aside class="rounded-xl bg-[#990000]">
+      <header
+        class="rounded-t-xl text-3xl font-bold bg-red-600 py-2 text-center"
+      >
+        {content.title}
+      </header>
+      <SwitchLogo client:load avatars={content.avatars} />
+      <div class="w-80 px-5 py-2 my-1">
+        <section>
+          <span class="font-bold">Profile</span>: <a
+            href={content.profile.url}
+            class="text-[#3ea6ff] hover:text-[#a4d5ff] hover:underline transition-[.3s]"
+            >{content.profile.name}</a
+          >
+        </section>
+        <section>
+          <span class="font-bold">Style</span>: {content.style}
+        </section>
+        <section>
+          <span class="font-bold">Date joined</span>: {content.joined}
+        </section>
+        <section>
+          <span class="font-bold">Date uploads started</span>: {content.upload}
+        </section>
+      </div>
+    </aside>
+    {
+      content.otherChannels?.map((content) => (
+      <br />
+        <aside class="block rounded-xl bg-[#990000]">
+          <header class="rounded-t-xl text-3xl font-bold bg-red-600 py-2 text-center">
+            {content.title}
+            <br />
+            <span class="text-xl">{`(${content.subtitle})`}</span>
+          </header>
+          <SwitchLogo client:load avatars={content.avatars} />
+          <div class="w-80 px-5 py-2 my-1">
+            <section>
+              <span class="font-bold">Profile</span>:{" "}
+              <a
+                href={content.profile.url}
+                class="text-[#3ea6ff] hover:text-[#a4d5ff] hover:underline transition-[.3s]"
+              >
+                {content.profile.name}
+              </a>
+            </section>
+            <section>
+              <span class="font-bold">Style</span>: {content.style}
+            </section>
+            <section>
+              <span class="font-bold">Date joined</span>:{" "}
+              {content.joined}
+            </section>
+            <section>
+              <span class="font-bold">Date uploads started</span>:{" "}
+              {content.upload}
+            </section>
+          </div>
+        </aside>
+        <br />
+      ))
+    }
+  </div>
+  <slot />
+</div>

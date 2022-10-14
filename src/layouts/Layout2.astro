@@ -1,0 +1,30 @@
+---
+import Header from "../components/Header.astro";
+import SwitchLogo from "../components/SwitchLogo";
+
+export interface Props {
+  content: {
+    title: string;
+    wip: boolean;
+  };
+}
+
+const { content } = Astro.props;
+---
+
+<Header />
+<div class="bg-[#212121] min-h-screen p-5 text-white">
+  {
+    content.wip && (
+      <div
+        class="rounded-xl p-4 mb-4 text-xl bg-yellow-200 text-yellow-800"
+        role="alert"
+      >
+        <span class="font-medium">Warning!</span> This page was marked as a work
+        in progress. Things may not be accurate, and some things may get
+        removed/changed in the final version.
+      </div>
+    )
+  }
+  <slot />
+</div>

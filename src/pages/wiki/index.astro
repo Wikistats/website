@@ -1,0 +1,24 @@
+---
+import Header from "../../components/Header.astro";
+const pages = await Astro.glob("./*.md");
+---
+
+<Header pages />
+<div class="bg-[#212121] text-center min-h-screen p-5 text-white">
+  <h1 class="text-4xl font-bold">All pages</h1>
+  <br />
+  <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+    {
+      pages
+        .sort((a, b) => a.frontmatter.title.localeCompare(b.frontmatter.title))
+        .map((page) => (
+          <a
+            href={page.url}
+            class="mt-2 text-[1.35rem] text-[#3ea6ff] hover:text-[#a4d5ff] hover:underline transition-[.3s]"
+          >
+            {page.frontmatter.title}
+          </a>
+        ))
+    }
+  </div>
+</div>

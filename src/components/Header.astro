@@ -1,0 +1,35 @@
+---
+export interface Props {
+  pages?: boolean;
+}
+
+const { pages } = Astro.props;
+---
+
+<header class="bg-black shadow-md border-none text-white">
+  <nav
+    class="text-2xl font-semibold content block sm:block md:flex py-2 w-full"
+  >
+    <a href="/">
+      <div
+        class="transition duration-[250ms] mt-[-5px] ml-3 content flex py-2 items-center md:items-start content-center md:content-start justify-center md:justify-start"
+      >
+        <img src="/logo.png" width={80} />
+        <h1 class="font-bold text-4xl mt-3 ml-2">
+          <span class="text-[#FF0000]">Wiki</span><span class="text-[#66FF00]"
+            >stats</span
+          >
+        </h1>
+      </div>
+    </a>
+    {
+      !pages && (
+        <a href="/wiki" class="absolute right-0 cursor-pointer">
+          <h1 class="text-[#3ea6ff] hover:text-[#a4d5ff] hover:underline transition-[.3s] text-2xl mt-3 ml-2 font-semibold content flex py-2 items-center md:items-end content-center md:content-end justify-center md:justify-end p-5">
+            All pages
+          </h1>
+        </a>
+      )
+    }
+  </nav>
+</header>
