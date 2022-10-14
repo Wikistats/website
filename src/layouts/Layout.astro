@@ -43,7 +43,7 @@ const { content } = Astro.props;
 <Header />
 <style>
   body {
-    @apply bg-[#212121]
+    @apply bg-[#212121];
   }
 </style>
 <div class="min-h-screen p-5 text-white">
@@ -88,38 +88,38 @@ const { content } = Astro.props;
     </aside>
     {
       content.otherChannels?.map((content) => (
-      <br />
-        <aside class="block rounded-xl bg-[#990000]">
-          <header class="rounded-t-xl text-3xl font-bold bg-red-600 py-2 text-center">
-            {content.title}
-            <br />
-            <span class="text-xl">{`(${content.subtitle})`}</span>
-          </header>
-          <SwitchLogo client:load avatars={content.avatars} />
-          <div class="w-80 px-5 py-2 my-1">
-            <section>
-              <span class="font-bold">Profile</span>:{" "}
-              <a
-                href={content.profile.url}
-                class="text-[#3ea6ff] hover:text-[#a4d5ff] hover:underline transition-[.3s]"
-              >
-                {content.profile.name}
-              </a>
-            </section>
-            <section>
-              <span class="font-bold">Style</span>: {content.style}
-            </section>
-            <section>
-              <span class="font-bold">Date joined</span>:{" "}
-              {content.joined}
-            </section>
-            <section>
-              <span class="font-bold">Date uploads started</span>:{" "}
-              {content.upload}
-            </section>
-          </div>
-        </aside>
-        <br />
+        <>
+          <br />
+          <aside class="block rounded-xl bg-[#990000]">
+            <header class="rounded-t-xl text-3xl font-bold bg-red-600 py-2 text-center">
+              {content.title}
+              <span class="block text-lg">{`(${content.subtitle})`}</span>
+            </header>
+            <SwitchLogo client:load avatars={content.avatars} />
+            <div class="w-80 px-5 py-2 my-1">
+              <section>
+                <span class="font-bold">Profile</span>:{" "}
+                <a
+                  href={content.profile.url}
+                  class="text-[#3ea6ff] hover:text-[#a4d5ff] hover:underline transition-[.3s]"
+                >
+                  {content.profile.name}
+                </a>
+              </section>
+              <section>
+                <span class="font-bold">Style</span>: {content.style}
+              </section>
+              <section>
+                <span class="font-bold">Date joined</span>: {content.joined}
+              </section>
+              <section>
+                <span class="font-bold">Date uploads started</span>:{" "}
+                {content.upload}
+              </section>
+            </div>
+          </aside>
+          <br />
+        </>
       ))
     }
   </div>
