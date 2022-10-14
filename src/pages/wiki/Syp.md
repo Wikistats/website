@@ -10,5 +10,5 @@ style: Subscriber counts
 joined: September 20th, 2019
 upload: June 15th, 2022
 wip: true
-layout: ../../components/Layout.astro
+layout: ../../layouts/Layout.astro
 ---

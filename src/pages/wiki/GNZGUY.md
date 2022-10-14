@@ -9,7 +9,7 @@ style: Subscriber history, view history
 joined: September 17th, 2018
 upload: March 9th, 2022
 wip: true
-layout: ../../components/Layout.astro
+layout: ../../layouts/Layout.astro
 ---
 
 **GNZGUY** (or simply **GNZ**) is a statistic creator focused on making subscriber count and view count history.
