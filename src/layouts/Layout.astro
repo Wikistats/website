@@ -40,6 +40,9 @@ export interface Props {
 const { content } = Astro.props;
 ---
 
+<head>
+  <title>{content.title}</title>
+</head>
 <Header />
 <style>
   body {
