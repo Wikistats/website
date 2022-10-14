@@ -18,6 +18,7 @@ export interface Props {
     joined: string;
     upload: string;
     wip: boolean;
+    partners?: string[];
     otherChannels?: {
       title: string;
       subtitle: string;
@@ -87,6 +88,21 @@ const { content } = Astro.props;
         <section>
           <span class="font-bold">Date uploads started</span>: {content.upload}
         </section>
+        {
+          content.partners && (
+            <section>
+              <span class="font-bold">Partners</span>:{" "}
+              {content.partners
+                .map((partner) =>
+                  // prettier-ignore
+                  <a href={`/wiki/${partner}`} class="text-[#3ea6ff] hover:text-[#a4d5ff] hover:underline transition-[.3s]">{partner}</a>
+                )
+                .reduce((accu, elem) => {
+                  return accu === null ? [elem] : [...accu, ", ", elem];
+                }, null)}
+            </section>
+          )
+        }
       </div>
     </aside>
     {
