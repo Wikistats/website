@@ -3,18 +3,11 @@ import tailwind from "@astrojs/tailwind";
 import addClasses from "rehype-add-classes";
 import react from "@astrojs/react";
 
-function defaultLayoutPlugin() {
-  return function (tree, file) {
-    file.data.astro.frontmatter.layout = "./src/layouts/Layout.astro";
-  };
-}
-
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), react()],
   markdown: {
     extendDefaultPlugins: true,
-    remarkPlugins: [defaultLayoutPlugin],
     rehypePlugins: [
       [
         addClasses,

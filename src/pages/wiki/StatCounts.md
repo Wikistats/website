@@ -10,6 +10,7 @@ style: Subscriber battles
 joined: June 30th, 2018
 upload: February 10th, 2020
 wip: true
+layout: ../../components/Layout.astro
 ---
 
 **xdn**, better known online as **StatCounts**, is a statistic livestreamer and content creator from Canada.

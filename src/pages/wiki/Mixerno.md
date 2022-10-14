@@ -24,6 +24,7 @@ otherChannels:
     },
   ]
 wip: true
+layout: ../../components/Layout.astro
 ---
 
 **MixAxern** (or simply **Axern**, formerly **Mixerno**) is a statistic website creator.
