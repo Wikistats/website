@@ -11,7 +11,7 @@ style: Subscriber counts, view counts
 joined: May 23rd, 2022
 upload: June 5th, 2022
 wip: true
-partners: ["InfinityStats", "JipStats", "KingGraphs"]
+partners: ["InfinityStats", "JipStats", "Tera"]
 layout: ../../layouts/Layout.astro
 otherChannels:
   [
