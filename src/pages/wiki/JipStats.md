@@ -10,6 +10,7 @@ style: Subscriber counts, view counts, Sub Count Visulizations
 joined: Aug 25th, 2020
 upload: Aug 25, 2020
 wip: true
+partners: ["Graphify", "RSC"]
 layout: ../../layouts/Layout.astro
 otherChannels:
   [
