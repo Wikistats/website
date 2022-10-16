@@ -10,6 +10,7 @@ style: Subscriber counts, view counts, Sub Count Visulizations
 joined: Aug 25th, 2020
 upload: Aug 25, 2020
 wip: true
+partners: ["Graphify", "RSC"]
 layout: ../../layouts/Layout.astro
 otherChannels:
   [
@@ -29,7 +30,7 @@ otherChannels:
   ]
 ---
 
-**Jip** (most commonly known as **JipStats**, formerly **JipIsPlaying**, **Jip Plays**, and **StatsComparisons**), is a statistics YouTuber who makes high quality subscriber count visualizations. At his peak, he uploaded daily, but now he only uploads weekly to improve video quality and take a break.
+**Jip** (most commonly known as **JipStats**, formerly **JipIsPlaying**, **Jip Plays**, and **StatsComparisons**), is a statistics YouTuber who makes high quality subscriber count visualizations and sub count timelapses. At his peak, he uploaded daily, but now he only uploads weekly to improve video quality and take a break.
 
 <br />
 
@@ -37,7 +38,7 @@ otherChannels:
 
 <br />
 
-Jip partened with **Graphify** in August 2022, which later made him start to make high quality streams. 
+Jip partnered with **Graphify** in August 2022, which later made him start to make high quality streams. He also partnered with [RSC Statistics](/wiki/RSC), and started a collaboration member with him.
 
 <br />
 
