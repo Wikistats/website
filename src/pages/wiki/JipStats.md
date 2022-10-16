@@ -37,9 +37,7 @@ otherChannels:
 
 <br />
 
-Jip partnered with **Graphify** in August 2022, which later made him start to make high quality streams. 
-<br />
-Jip Also Partnered With **RSC Statistics**, And Started A Collaboration Month with RSC.
+Jip partnered with **Graphify** in August 2022, which later made him start to make high quality streams. He also partnered with [RSC Statistics](/wiki/RSC), and started a collaboration member with him.
 
 <br />
 
