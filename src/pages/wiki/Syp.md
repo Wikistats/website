@@ -3,7 +3,7 @@ title: Syp
 profile: { name: Syp, url: https://youtube.com/c/SypWW }
 avatars:
   {
-    appearance: https://tca.has-no-bra.in/5Kf2lRe7R.png,
+    appearance: https://i.ibb.co/HqM0hbQ/syp-appearance.png,
     icon: https://yt3.ggpht.com/Ra8ZiE5bIa1LMI_xMlOo-UXy_lS-rHflm7WIE7KMfM5AgIRRX6xuzhS13YtFwU2oAj6YQDKYUg=s200-c-k-c0x00ffffff-no-rj,
   }
 style: Subscriber counts
