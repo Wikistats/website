@@ -3,7 +3,7 @@ title: JipStats
 profile: { name: JipStats, url: https://youtube.com/JipStats }
 avatars:
   {
-    icon: https://yt3.ggpht.com/avjCdyCGZbMj1stYCMAOYzyoA2izbLDKWVobZ7dhiYzdgrU6XfPpPLyYXLEole0KXVAoE3u2=s176-c-k-c0x00ffffff-no-rj,
+    icon: https://yt3.ggpht.com/CjcsQkaHeKZjgCNR-A7SiB39-iphnsuJFE9TUMf5ZALjUQX8l51u7b0bN8k_VL7Wv1dBobGWQw=s176-c-k-c0x00ffffff-no-rj,
     logo: https://cdn.discordapp.com/attachments/824637986989670441/1030405636552409108/STATS_BOTH.png,
   }
 style: Subscriber counts, view counts, Sub Count Visulizations
